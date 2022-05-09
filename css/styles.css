@@ -205,7 +205,7 @@ padding-bottom: 200px;
 }
 
 
-/* ============ Feature/Особенности ============ */
+/* ============ Section-2 (Feature/Особенности) ============ */
 .feature {
     display: flex;
     justify-content: space-between;    
@@ -247,7 +247,7 @@ padding-bottom: 200px;
     color: var(--second-text-color);
 }
 
-/* ============Our-work============ */
+/* ============ Section-3 (Our-work/Чем занимаемся) ============ */
 .section-our-work {
     padding-top: 0;
 }
@@ -296,7 +296,7 @@ padding-bottom: 200px;
 }
 
 
-/* ============Our-team============ */
+/* ============ Section-4 (Our-tea/Наша команда) ============ */
 .our-team {
     background-color: #F5F4FA;
     justify-content: space-between;
@@ -363,7 +363,7 @@ margin-right: 30px;
     margin-right: 10px;
 }
 
-/* ============Clients============ */
+/* ============ Section-5 (Clients/Постоянные клиенты) ============ */
 .clients {
     display: flex;
     justify-content:space-between;
