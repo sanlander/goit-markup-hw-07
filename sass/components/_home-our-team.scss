@@ -13,10 +13,9 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-}
-
-.our-team .item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .our-team .foto {
@@ -51,25 +50,25 @@
 
 }
 
-.soc-link a {
-    display: inline-flex;
-    width: 44px;
-    height: 44px;
-    /* outline: 1px solid tomato; */
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    fill: #afb1b8;
-    transition: background-color var(--transition-primary), fill var(--transition-primary);
+.soc-link {
+    a {
+            display: inline-flex;
+            width: 44px;
+            height: 44px;
+            /* outline: 1px solid tomato; */
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            fill: #afb1b8;
+            transition: background-color var(--transition-primary), fill var(--transition-primary);
 }
-
-.soc-link a:hover,
-.soc-link a:focus {
-    background-color: var(--accent-background-color);
-    fill: #FFFFFF;
-    outline: none;
-}
-
-.soc-link:not(:last-child) {
-    margin-right: 10px;
+    & a:hover,
+    & a:focus {
+            background-color: var(--accent-background-color);
+            fill: #FFFFFF;
+            outline: none;
+        }
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }

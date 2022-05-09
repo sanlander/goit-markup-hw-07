@@ -28,8 +28,6 @@
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-
-
 }
 
 .button-backrdop-close {
@@ -63,11 +61,9 @@
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    /* outline: 1px solid tomato; */
-}
-
-.form-field:last-child {
-    margin-bottom: 20px;
+    &:last-child {
+            margin-bottom: 20px;
+        }
 }
 
 .form-label {
@@ -87,6 +83,11 @@
     border-radius: 4px;
     transition: border var(--transition-primary);
     padding: 11px 42px;
+    &:hover,
+    &:focus {
+            border: 1px solid var(--accent-background-color);
+            outline: none;
+        }
 }
 
 .form-text {
@@ -97,28 +98,19 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-    transition: border var(--transition-primary), ;
-}
-
-.form-text::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-}
-
-.form-input:hover,
-.form-input:focus,
-.form-text:hover,
-.form-text:focus {
-    border: 1px solid var(--accent-background-color);
-    outline: none;
-}
-
-.form-input:hover+.modal-icon,
-.form-input:focus+.modal-icon {
-    fill: var(--accent-background-color);
+    transition: border var(--transition-primary);
+    &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-background-color);
+        outline: none;
+    }
 }
 
 .input-box {
@@ -131,6 +123,10 @@
     left: 12px;
     transform: translateY(-50%);
     transition: fill var(--transition-primary);
+    .form-input:hover + &,
+    .form-input:focus + & {
+            fill: var(--accent-background-color);
+        }
 }
 
 // ============ Checkbox modal ============
@@ -159,23 +155,22 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
-}
-
-.checkbox-label a {
-    color: var(--accent-background-color);
+    a {
+            color: var(--accent-background-color);
+        }
+        
 }
 
 .check-icon {
     fill: transparent;
+    .checkbox-input:checked+.checkbox-label & {
+            fill: var(--primary-background-color);
+        }
 }
 
 .checkbox-input:checked+.checkbox-label span {
     background-color: var(--accent-background-color);
     border: 1px solid transparent;
-}
-
-.checkbox-input:checked+.checkbox-label .check-icon {
-    fill: var(--primary-background-color);
 }
 
 .button-field {
@@ -197,9 +192,8 @@
     border: none;
     transition: background-color var(--transition-primary);
     cursor: pointer;
-}
-
-.modal-button:hover,
-.modal-button:focus {
-    background-color: #188CE8;
+    &:hover,
+    &:focus {
+            background-color: #188CE8;
+        }
 }

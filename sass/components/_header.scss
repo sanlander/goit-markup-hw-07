@@ -28,67 +28,67 @@
     letter-spacing: 0.02em;
     transition: color var(--transition-primary);
 }
+.menu-nav__link {
+    &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            bottom: 0;
+            right: 0;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--accent-background-color);
+            transition: width 0.5s,
+                left 0.5s;
+        }
+    &:hover::before,
+    &:focus::before {
+        width: 100%;
+        left: 0;
+    }
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
 
 .menu-nav__item,
 .contacts__item {
     position: relative;
     align-items: center;
+    &:not(:last-child) {
+            margin-right: 50px;
+        }
 }
 
 .menu-nav__link--current {
     color: var(--accent-text-color);
-}
-
-.menu-nav__link--current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-background-color);
-}
-
-.menu-nav__link::before {
-    content: '';
-    position: absolute;
-    width: 0;
-    bottom: 0;
-    right: 0;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-background-color);
-    transition: width 0.5s,
-        left 0.5s;
-}
-
-.menu-nav__link:hover::before,
-.menu-nav__link:focus::before {
-    width: 100%;
-    left: 0;
-}
-
-.menu-nav__link:hover,
-.menu-nav__link:focus,
-.contacts__link:hover,
-.contacts__link:focus,
-.contacts__icon:hover,
-.contacts__icon:focus {
-    color: var(--accent-text-color);
+    &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: var(--accent-background-color);
+        }
 }
 
 .contacts__link {
     color: var(--second-text-color);
-}
-
-.menu-nav__item:not(:last-child),
-.contacts__item:not(:last-child) {
-    margin-right: 50px;
+    &:hover,
+    &:focus {
+            color: var(--accent-text-color);
+        }
 }
 
 .contacts__icon {
     margin: auto 10px auto 0;
     fill: currentColor;
     transition: color var(--transition-primary) ease-in-out;
+    &:hover,
+    &:focus {
+            color: var(--accent-text-color);
+        }
 }

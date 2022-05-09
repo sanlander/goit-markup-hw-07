@@ -24,10 +24,9 @@
 
 .herro-section__button {
     font-weight: 700;
-}
-
-.herro-section__button:hover,
-.herro-section__button:focus {
-    background-color: #188CE8;
-    outline: none;
+    &:hover,
+    &:focus {
+            background-color: #188CE8;
+            outline: none;
+        }
 }

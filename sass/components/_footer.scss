@@ -12,6 +12,9 @@
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    & .item:not(:last-child) {
+            margin-bottom: 9px;
+        }
 }
 
 .footer-address,
@@ -21,18 +24,13 @@
     display: inline-block;
 }
 
-.address .item:not(:last-child) {
-    margin-bottom: 9px;
-}
-
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
     transition: color var(--transition-primary);
-}
-
-.footer-contacts:hover,
-.footer-contacts:focus {
-    color: var(--accent-text-color);
+    &:hover,
+    &:focus {
+            color: var(--accent-text-color);
+        }
 }
 
 .footer-logo-adress {
@@ -42,7 +40,16 @@
 // ============Footer Соц сети============
 .footer-soc {
     margin-right: 93px;
+    a {
+            fill: white;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: background-color var(--transition-primary);
+        }
 
+    a:hover,
+    a:focus {
+            background-color: var(--accent-text-color);
+        }
 }
 
 .footer-soc-title,
@@ -54,17 +61,6 @@
     line-height: 1.14;
     letter-spacing: 0.03em;
     margin: 12px 0 20px 0;
-}
-
-.footer-soc .soc a {
-    fill: white;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color var(--transition-primary);
-}
-
-.footer-soc .soc a:hover,
-.footer-soc .soc a:focus {
-    background-color: var(--accent-text-color);
 }
 
 // ============Footer E-mail подписка============
@@ -81,14 +77,13 @@
     color: rgba(255, 255, 255, 0.6);
     font-size: 16px;
     line-height: 1.25;
-}
-
-.mailing input::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-    align-items: center;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            align-items: center;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
 }
 
 .mailing-button {
@@ -107,12 +102,11 @@
     letter-spacing: 0.06em;
     color: var(--primary-background-color);
     transition: background-color var(--transition-primary);
-}
-
-.mailing-button:hover,
-.mailing-button:focus {
-    background-color: #188CE8;
-    cursor: pointer;
+    &:hover,
+    &:focus {
+            background-color: #188CE8;
+            cursor: pointer;
+        }
 }
 
 .mailing-icon {

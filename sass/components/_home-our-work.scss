@@ -15,12 +15,10 @@
 
 .our-work .item {
     position: relative;
+    :not(:last-child) {
+            margin-right: 30px;
+        }
 }
-
-.our-work>.item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .our-work-title,
 .team-title,
 .clients-title {

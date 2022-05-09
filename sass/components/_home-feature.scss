@@ -5,6 +5,9 @@
 
 .feature .item {
     width: 270px;
+    &:not(:last-child) {
+            margin-right: 30px;
+        }
 }
 
 .feature-logo {
@@ -16,11 +19,6 @@
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-}
-
-
-.feature .item:not(:last-child) {
-    margin-right: 30px;
 }
 
 .feature-title {
