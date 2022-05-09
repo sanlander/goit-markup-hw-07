@@ -92,12 +92,14 @@ h1, h2, h3, h4, h5, p {
     margin-right: 93px;
 }
 .footer__logo {
-    color: var(--primary-background-color);
     display: inline-block;
     margin-bottom: 20px;
 }
 .logo__color {
     color: var(--accent-text-color);
+}
+.logo--white {
+    color: var(--primary-background-color);
 }
 
 /* ============ Menu nav + Contacts ============*/
