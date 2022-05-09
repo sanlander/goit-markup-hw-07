@@ -367,9 +367,7 @@ margin-right: 30px;
 .clients {
     display: flex;
     justify-content:space-between;
-
 }
-
 .clients-item a {
     display: inline-flex;
     width: 170px;
@@ -392,13 +390,12 @@ border-color: var(--accent-text-color);
     margin-right: 30px;
 }
 
-/* ============Portfolio============ */
+/* ============ Portfolio / Наши работы ============ */
 .examples {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
 }
-
 .examples .item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
